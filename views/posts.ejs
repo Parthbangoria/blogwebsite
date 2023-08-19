@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <!-- css style-sheet          -->
+    <link rel="stylesheet" href="/style.css">
+ 
+    <!-- font awwsome         -->     
+ <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+ <script src="https://kit.fontawesome.com/162c4092e4.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <header>
+       <div class="nav container">
+        <!-- logo   -->
+        <a href="/" class="logo">blo<span>gger</span></a>
+    <!-- login btn   -->
+    <!-- <a href="#" class="login">login</a> -->
+    <%if (user) { %>
+        <a href="/logout" class="login">logout</a>
+       
+        <% }else{ %>
+            <a href="/login" class="login">login</a>
+            <%}%>
+    
+
+
+
+
+</div>
+
+
+</header>
+
+<!-- post content     -->
+<section class="post-header">
+    <div class="header-content post-container">
+        <!-- back to /  -->
+     <a href="/" class="back-home"> back to home</a>
+    <!-- title -->
+    <h1 class="header-title"> how to create best us design with adobe xd</h1>
+    <!-- post img -->
+    <img src="/img/post-1.jpg" alt="" class="header-img">
+    </div>
+</section>
+
+
+<!-- posts       -->
+<section class="post-content post-container">
+  <h2 class="sub-heading"><%=foundpost.heading %></h2>
+  <p class="post-text"><%=foundpost.text %></p>
+  <!-- <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quas id explicabo quos maxime quo neque est nisi veritatis ipsum rem aperiam odio sequi, repellendus, consectetur dignissimos vitae, adipisci aliquid autem quasi illo consequatur officia magni? Obcaecati harum nisi ducimus non atque aperiam numquam!</p>
+  <h2 class="sub-heading">create the best ux design with adobe xd</h2>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quas id explicabo quos maxime quo neque est nisi veritatis ipsum rem aperiam odio sequi, repellendus, consectetur dignissimos vitae, adipisci aliquid autem quasi illo consequatur officia magni? Obcaecati harum nisi ducimus non atque aperiam numquam!</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quas id explicabo quos maxime quo neque est nisi veritatis ipsum rem aperiam odio sequi, repellendus, consectetur dignissimos vitae, adipisci aliquid autem quasi illo consequatur officia magni? Obcaecati harum nisi ducimus non atque aperiam numquam!</p>
+  <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium quas id explicabo quos maxime quo neque est nisi veritatis ipsum rem aperiam odio sequi, repellendus, consectetur dignissimos vitae, adipisci aliquid autem quasi illo consequatur officia magni? Obcaecati harum nisi ducimus non atque aperiam numquam!</p> -->
+
+</section>
+
+<!-- share      -->
+<div class="share post-container">
+    <span class="share-title">share this artical here</span>
+    <div class="social">
+        <a href="#"><i class="bx fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="bx fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="bx fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+
+<!-- footer     -->
+
+<div class="footer container">
+    
+        <p>&#169; carpoolvenom All Rights Reserved</p>
+        <div class="social">
+            <a href="#"><i class="bx fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="bx fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="bx fa-brands fa-instagram"></i></a>
+        </div>
+
+</div>
+
+<!--  JQuery Link   -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+
+<!-- Link to js      -->
+<script src="/main.js"> </script>
+</body>
+</html>
